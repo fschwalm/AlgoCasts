@@ -6,6 +6,8 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverse(str) {}
+function reverse(str) {
+  return [...str].sort(() => -1).reduce((acc, char) => acc + char, "");
+}
 
 module.exports = reverse;
